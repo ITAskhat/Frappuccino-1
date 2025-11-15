@@ -1,0 +1,208 @@
+/* Общие стили для всего сайта */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f2ee;
+  color: #4b2e05;
+  margin: 0;
+  padding: 0;
+}
+
+/* Шапка */
+.navbar {
+  background-color: #6f4e37;
+  padding: 15px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.name {
+  font-size: 28px;
+  margin: 0;
+}
+
+/* Навигация под шапкой */
+.nav-below-header {
+  text-align: left;
+  padding: 10px 20px;
+  background-color: #6f4e37;
+}
+
+.nav-below-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-below-header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-below-header ul li a:hover {
+  color: #d4a373;
+}
+
+/* Основной контент Home */
+.home-main {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Контейнер для картинки + кнопки на главной */
+.image-button-container {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.image-button-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image-button-container .online-order-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Кнопка "Заказать онлайн" на главной */
+.online-order-btn {
+  padding: 12px 25px;
+  background-color: #c49a6c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.online-order-btn:hover {
+  background-color: #a67850;
+  transform: none;
+}
+
+/* Сетка меню */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+@media (max-width: 700px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Карточка напитка */
+.item {
+  background: #fff7f0;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* кнопка внизу */
+  height: 400px; /* фиксированная высота карточки */
+  transition: box-shadow 0.3s;
+}
+
+.item:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Изображение напитка */
+.item img {
+  width: 100%;
+  max-width: 200px; /* ограничение по ширине */
+  height: 180px; /* чуть меньше, чтобы не было огромных картинок */
+  object-fit: contain; /* вся картинка видна */
+  border-radius: 10px;
+  margin: 0 auto 10px auto;
+}
+
+/* Название и цена */
+.item h3 {
+  margin: 5px 0;
+  color: #4b2e2b;
+}
+
+.price {
+  color: #7b4f3a;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Контейнер кнопок под напитками */
+.order-buttons {
+  display: flex;
+  justify-content: center; /* центрируем кнопки */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Кнопки заказа */
+.order-btn {
+  padding: 12px 25px;
+  background-color: #c49a6c;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #a67850;
+  transform: none; /* убираем прыжки */
+}
+
+/* Групповые заказы */
+.group-order-text {
+  margin-top: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Социальные кнопки на контактах */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6f4e37;
+  color: #fff;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #d4a373;
+  transform: none;
+}
+
+/* Изображение на контактах */
+.contact-img {
+  margin-top: 30px;
+  width: 400px;
+  border-radius: 20px;
+}
